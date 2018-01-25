@@ -1,0 +1,34 @@
+PODS:
+  - ADXLibrary (1.4.1):
+    - mopub-ios-sdk
+  - mopub-ios-sdk (4.19.0):
+    - mopub-ios-sdk/MoPubSDK (= 4.19.0)
+  - mopub-ios-sdk/Avid (4.19.0):
+    - mopub-ios-sdk/Core
+  - mopub-ios-sdk/Core (4.19.0)
+  - mopub-ios-sdk/Moat (4.19.0):
+    - mopub-ios-sdk/Core
+  - mopub-ios-sdk/MoPubSDK (4.19.0):
+    - mopub-ios-sdk/Avid
+    - mopub-ios-sdk/Core
+    - mopub-ios-sdk/Moat
+
+DEPENDENCIES:
+  - ADXLibrary (from `https://please:contact@github.com/adxcorp/ADXLibrary_iOS.git`)
+
+EXTERNAL SOURCES:
+  ADXLibrary:
+    :git: https://please:contact@github.com/adxcorp/ADXLibrary_iOS.git
+
+CHECKOUT OPTIONS:
+  ADXLibrary:
+    :commit: d7ee8fed8f2f0789289e3a60f2fd88bee1e50b61
+    :git: https://please:contact@github.com/adxcorp/ADXLibrary_iOS.git
+
+SPEC CHECKSUMS:
+  ADXLibrary: ac217eb17df6ea47e4b11a7a15b9c1b7ed59291b
+  mopub-ios-sdk: ffbe414adf2fb7717d999020a3ff51d908da599f
+
+PODFILE CHECKSUM: f3c9e6f8963755fc69ec6e63868a914357a3590b
+
+COCOAPODS: 1.4.0
