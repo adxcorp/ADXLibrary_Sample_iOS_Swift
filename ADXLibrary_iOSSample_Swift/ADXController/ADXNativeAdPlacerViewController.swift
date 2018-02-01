@@ -23,7 +23,7 @@ class ADXNativeAdPlacerViewController: UIViewController, UICollectionViewDataSou
             , viewSizeHandler: { (maximumWidth) -> CGSize in
                 let width : CGFloat
                 width = UIScreen.main.bounds.size.width;
-                return CGSize(width: width, height: floor(width * 0.5225))
+                return CGSize(width: width, height: 270.0)
         })
         
         self.placer.loadAds(forAdUnitID: NATIVE_AD_UNIT_ID)

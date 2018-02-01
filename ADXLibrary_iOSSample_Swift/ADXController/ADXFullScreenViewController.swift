@@ -18,29 +18,16 @@ class ADXFullScreenViewController: UIViewController, MPInterstitialAdControllerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadInterstitial()
+        mopubInterstitial = MPInterstitialAdController(forAdUnitId: INTERSTITIAL_AD_UNIT_ID)
+        mopubInterstitial.delegate = self
     }
     
     @IBAction func selectShowAd(_ sender: Any) {
-        showInterstitial()
-    }
-    
-    func loadInterstitial() {
-
-        mopubInterstitial = MPInterstitialAdController(forAdUnitId: INTERSTITIAL_AD_UNIT_ID)
-        mopubInterstitial.delegate = self
         mopubInterstitial.loadAd()
     }
     
-    func showInterstitial() {
-
-        if(mopubInterstitial.ready) {
-            mopubInterstitial.show(from: self);
-        }
-    }
-    
     func interstitialDidLoadAd(_ interstitial: MPInterstitialAdController!) {
-
+        mopubInterstitial.show(from: self);
     }
     
     override func didReceiveMemoryWarning() {
