@@ -10,7 +10,7 @@ import UIKit
 import MoPub
 import ADXLibrary
 
-let NATIVE_AD_UNIT_ID = "8fe57f8e949f468bb3f58ef5fdf7499d"
+let NATIVE_AD_UNIT_ID = "9ab55b93573b43869da0c47bd0780cd1"
 
 class ADXNativeAdViewController: UIViewController, NativeAdFactoryDelegate, MPNativeAdDelegate {
 

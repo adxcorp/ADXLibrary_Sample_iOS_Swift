@@ -423,9 +423,19 @@
 					"$(PROJECT_DIR)/Pods/ADXLibrary/ADXLibrary/Dependencies",
 				);
 				INFOPLIST_FILE = ADXLibrary_iOSSample_Swift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adx.ADXLibrary-iOSSample-Swift";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"ADXLibrary\"",
+					"-framework",
+					"\"MoPub\"",
+					"-framework",
+					"\"CTSDK\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.malangstudio.alarmMonOld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -450,9 +460,19 @@
 					"$(PROJECT_DIR)/Pods/ADXLibrary/ADXLibrary/Dependencies",
 				);
 				INFOPLIST_FILE = ADXLibrary_iOSSample_Swift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adx.ADXLibrary-iOSSample-Swift";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"ADXLibrary\"",
+					"-framework",
+					"\"MoPub\"",
+					"-framework",
+					"\"CTSDK\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.malangstudio.alarmMonOld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";

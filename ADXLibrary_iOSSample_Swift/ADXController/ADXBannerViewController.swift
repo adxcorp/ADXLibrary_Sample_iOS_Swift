@@ -9,7 +9,7 @@
 import UIKit
 import MoPub
 
-var BANNER_AD_UNIT_ID = "f86ac2fde1d4480e95f1f0d80710a2fc"
+var BANNER_AD_UNIT_ID = "a9bcfae03030442da3ed277aff98713c"
 
 class ADXBannerViewController: UIViewController, MPAdViewDelegate {
     fileprivate var mopubAdView : MPAdView!

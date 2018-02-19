@@ -9,7 +9,7 @@
 import UIKit
 import MoPub
 
-var INTERSTITIAL_AD_UNIT_ID = "7758ce2f590f43fd8ba9f03d14fc8b78"
+var INTERSTITIAL_AD_UNIT_ID = "f6110c24fa8a4daf9c6159f5ea181e7d"
 
 class ADXFullScreenViewController: UIViewController, MPInterstitialAdControllerDelegate {
 
