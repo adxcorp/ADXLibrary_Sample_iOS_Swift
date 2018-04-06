@@ -9,8 +9,6 @@
 import UIKit
 import MoPub
 
-var INTERSTITIAL_AD_UNIT_ID = "f6110c24fa8a4daf9c6159f5ea181e7d"
-
 class ADXFullScreenViewController: UIViewController, MPInterstitialAdControllerDelegate {
 
     fileprivate var mopubInterstitial: MPInterstitialAdController!
@@ -26,9 +24,18 @@ class ADXFullScreenViewController: UIViewController, MPInterstitialAdControllerD
         mopubInterstitial.loadAd()
     }
     
+    // MARK: - MPInterstitialAdControllerDelegate
+    
     func interstitialDidLoadAd(_ interstitial: MPInterstitialAdController!) {
+        print("interstitialDidLoadAd")
         mopubInterstitial.show(from: self);
     }
+    
+    func interstitialDidFail(toLoadAd interstitial: MPInterstitialAdController!) {
+        print("interstitialDidFail")
+    }
+    
+    // MARK: -
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

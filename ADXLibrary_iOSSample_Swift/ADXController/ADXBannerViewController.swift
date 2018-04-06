@@ -9,8 +9,6 @@
 import UIKit
 import MoPub
 
-var BANNER_AD_UNIT_ID = "a9bcfae03030442da3ed277aff98713c"
-
 class ADXBannerViewController: UIViewController, MPAdViewDelegate {
     fileprivate var mopubAdView : MPAdView!
 
@@ -36,14 +34,22 @@ class ADXBannerViewController: UIViewController, MPAdViewDelegate {
         
     }
     
+    
+    // MARK: - MPAdViewDelegate
+    
+    func adViewDidLoadAd(_ view: MPAdView!) {
+        print("adViewDidLoadAd")
+    }
+    
+    func adViewDidFail(toLoadAd view: MPAdView!) {
+        print("adViewDidFail")
+    }
+    
     func viewControllerForPresentingModalView() -> UIViewController! {
         return self
     }
     
-    func adViewDidLoadAd(_ view: MPAdView!) {
-        print(view.description)
-    }
-    
+    // MARK: -
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

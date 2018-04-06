@@ -9,6 +9,11 @@
 import UIKit
 import ADXLibrary
 
+let BANNER_AD_UNIT_ID           = "a9bcfae03030442da3ed277aff98713c"
+let INTERSTITIAL_AD_UNIT_ID     = "f6110c24fa8a4daf9c6159f5ea181e7d"
+let NATIVE_AD_UNIT_ID           = "9ab55b93573b43869da0c47bd0780cd1"
+let REWARDEDVIDEO_AD_UNIT_ID    = "756f6366d71f4bef88ae55c5ac13ac36"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -16,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         NativeAdFactory.sharedInstance().setRenderingViewClass(NATIVE_AD_UNIT_ID, renderingViewClass: NativeAdView.self)
-//        NativeAdFactory.sharedInstance().preloadAd(NATIVE_AD_UNIT_ID)
+        NativeAdFactory.sharedInstance().preloadAd(NATIVE_AD_UNIT_ID)
+        
         return true
     }
 

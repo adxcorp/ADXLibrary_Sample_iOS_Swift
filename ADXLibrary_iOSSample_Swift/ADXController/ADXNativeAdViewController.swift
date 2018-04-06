@@ -10,8 +10,6 @@ import UIKit
 import MoPub
 import ADXLibrary
 
-let NATIVE_AD_UNIT_ID = "9ab55b93573b43869da0c47bd0780cd1"
-
 class ADXNativeAdViewController: UIViewController, NativeAdFactoryDelegate, MPNativeAdDelegate {
 
     var nativeAd:MPNativeAd?
@@ -33,15 +31,14 @@ class ADXNativeAdViewController: UIViewController, NativeAdFactoryDelegate, MPNa
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-
-    }
+    // MARK: - MPNativeAdDelegate
     
     func viewControllerForPresentingModalView() -> UIViewController! {
         return self
     }
 
+    // MARK: - NativeAdFactoryDelegate
+    
     func onSuccess(_ adUnitId: String!, nativeAd: MPNativeAd!) {
         
         if (adUnitId == NATIVE_AD_UNIT_ID) {
@@ -57,13 +54,20 @@ class ADXNativeAdViewController: UIViewController, NativeAdFactoryDelegate, MPNa
             self.view.addSubview(nativeAdView!)
             
         } else {
-            
+            print("fail to load")
         }
 
     
     }
     
     func onFailure(_ adUnitId: String!) {
+        print("onFailure :", adUnitId)
+    }
+    
+    // MARK: -
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
         
     }
 

@@ -9,7 +9,7 @@
 import UIKit
 import ADXLibrary
 
-class ADXNativeAdPlacerViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ADXNativeAdPlacerViewController: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet var mainCollectionView: UICollectionView!
     var placer : MPCollectionViewAdPlacer!
@@ -30,6 +30,7 @@ class ADXNativeAdPlacerViewController: UIViewController, UICollectionViewDataSou
         
     }
 
+    // MARK: - UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -42,6 +43,8 @@ class ADXNativeAdPlacerViewController: UIViewController, UICollectionViewDataSou
         
         return cell
     }
+    
+    // MARK: -
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
