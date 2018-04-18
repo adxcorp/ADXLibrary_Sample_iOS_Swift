@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6E62D078FEC63F8943A22953 /* Pods_ADXLibrary_iOSSample_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C76B2EEFD3EE2F5BF70D1D /* Pods_ADXLibrary_iOSSample_Swift.framework */; };
+		FD0BB62D2080D4E50020F908 /* AppLovinAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB61F2080D4E50020F908 /* AppLovinAdapter.framework */; };
+		FD0BB62E2080D4E50020F908 /* MVSDKInterstitial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6202080D4E50020F908 /* MVSDKInterstitial.framework */; };
+		FD0BB62F2080D4E50020F908 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6212080D4E50020F908 /* VungleSDK.framework */; };
+		FD0BB6302080D4E50020F908 /* VungleAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6222080D4E50020F908 /* VungleAdapter.framework */; };
+		FD0BB6312080D4E50020F908 /* MVSDKReward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6232080D4E50020F908 /* MVSDKReward.framework */; };
+		FD0BB6322080D4E50020F908 /* FacebookAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6242080D4E50020F908 /* FacebookAdapter.framework */; };
+		FD0BB6332080D4E50020F908 /* AppLovinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6252080D4E50020F908 /* AppLovinSDK.framework */; };
+		FD0BB6342080D4E50020F908 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6262080D4E50020F908 /* GoogleMobileAds.framework */; };
+		FD0BB6352080D4E50020F908 /* MVSDKAppWall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6272080D4E50020F908 /* MVSDKAppWall.framework */; };
+		FD0BB6362080D4E50020F908 /* UnityAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6282080D4E50020F908 /* UnityAdapter.framework */; };
+		FD0BB6372080D4E50020F908 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6292080D4E50020F908 /* UnityAds.framework */; };
+		FD0BB6382080D4E50020F908 /* MVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB62A2080D4E50020F908 /* MVSDK.framework */; };
+		FD0BB6392080D4E50020F908 /* CTSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB62B2080D4E50020F908 /* CTSDK.framework */; };
+		FD0BB63A2080D4E50020F908 /* DUModuleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB62C2080D4E50020F908 /* DUModuleSDK.framework */; };
 		FD0D728220185A830054F766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D728120185A830054F766 /* AppDelegate.swift */; };
 		FD0D728420185A830054F766 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D728320185A830054F766 /* ViewController.swift */; };
 		FD0D728720185A830054F766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0D728520185A830054F766 /* Main.storyboard */; };
@@ -19,6 +33,7 @@
 		FD7B2771201861F1008DC676 /* ADXNativeAdPlacerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7B2770201861F1008DC676 /* ADXNativeAdPlacerViewController.swift */; };
 		FD7B277720186845008DC676 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD7B277620186845008DC676 /* NativeAdView.xib */; };
 		FDBEFB4A20188968004155D0 /* NativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEFB4920188968004155D0 /* NativeView.swift */; };
+		FDE5EAD620871CE400DC944F /* ADXAdMobRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5EAD520871CE400DC944F /* ADXAdMobRewardViewController.swift */; };
 		FDE5F50C2077633A00D14429 /* ADXRewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5F50B2077633A00D14429 /* ADXRewardViewController.swift */; };
 		FDE5F50E207763DB00D14429 /* ADXAppWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE5F50D207763DB00D14429 /* ADXAppWallViewController.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +42,20 @@
 		E4FA98721727C97E25DD0A2B /* Pods-ADXLibrary_iOSSample_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXLibrary_iOSSample_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		F2C76B2EEFD3EE2F5BF70D1D /* Pods_ADXLibrary_iOSSample_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADXLibrary_iOSSample_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F385CEB2A965661614E6B73E /* Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		FD0BB61F2080D4E50020F908 /* AppLovinAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppLovinAdapter.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/AppLovinAdapter.framework; sourceTree = "<group>"; };
+		FD0BB6202080D4E50020F908 /* MVSDKInterstitial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MVSDKInterstitial.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/MVSDKInterstitial.framework; sourceTree = "<group>"; };
+		FD0BB6212080D4E50020F908 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VungleSDK.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/VungleSDK.framework; sourceTree = "<group>"; };
+		FD0BB6222080D4E50020F908 /* VungleAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VungleAdapter.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/VungleAdapter.framework; sourceTree = "<group>"; };
+		FD0BB6232080D4E50020F908 /* MVSDKReward.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MVSDKReward.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/MVSDKReward.framework; sourceTree = "<group>"; };
+		FD0BB6242080D4E50020F908 /* FacebookAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookAdapter.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/FacebookAdapter.framework; sourceTree = "<group>"; };
+		FD0BB6252080D4E50020F908 /* AppLovinSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppLovinSDK.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/AppLovinSDK.framework; sourceTree = "<group>"; };
+		FD0BB6262080D4E50020F908 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		FD0BB6272080D4E50020F908 /* MVSDKAppWall.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MVSDKAppWall.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/MVSDKAppWall.framework; sourceTree = "<group>"; };
+		FD0BB6282080D4E50020F908 /* UnityAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAdapter.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/UnityAdapter.framework; sourceTree = "<group>"; };
+		FD0BB6292080D4E50020F908 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAds.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/UnityAds.framework; sourceTree = "<group>"; };
+		FD0BB62A2080D4E50020F908 /* MVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MVSDK.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/MVSDK.framework; sourceTree = "<group>"; };
+		FD0BB62B2080D4E50020F908 /* CTSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CTSDK.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/CTSDK.framework; sourceTree = "<group>"; };
+		FD0BB62C2080D4E50020F908 /* DUModuleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DUModuleSDK.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/DUModuleSDK.framework; sourceTree = "<group>"; };
 		FD0D727E20185A830054F766 /* ADXLibrary_iOSSample_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADXLibrary_iOSSample_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0D728120185A830054F766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD0D728320185A830054F766 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,19 +63,13 @@
 		FD0D728820185A830054F766 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0D728B20185A830054F766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD0D728D20185A830054F766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD0D729320185D370054F766 /* MVSDKInterstitial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MVSDKInterstitial.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/MVSDKInterstitial.framework; sourceTree = "<group>"; };
-		FD0D729420185D370054F766 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityAds.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/UnityAds.framework; sourceTree = "<group>"; };
-		FD0D729520185D370054F766 /* MVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MVSDK.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/MVSDK.framework; sourceTree = "<group>"; };
-		FD0D729620185D370054F766 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/GoogleMobileAds.framework; sourceTree = "<group>"; };
-		FD0D729720185D370054F766 /* MVSDKAppWall.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MVSDKAppWall.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/MVSDKAppWall.framework; sourceTree = "<group>"; };
-		FD0D729820185D370054F766 /* CTSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CTSDK.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/CTSDK.framework; sourceTree = "<group>"; };
-		FD0D729920185D370054F766 /* MVSDKReward.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MVSDKReward.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/MVSDKReward.framework; sourceTree = "<group>"; };
 		FD7B276A201861B5008DC676 /* ADXBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADXBannerViewController.swift; sourceTree = "<group>"; };
 		FD7B276C201861C7008DC676 /* ADXFullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADXFullScreenViewController.swift; sourceTree = "<group>"; };
 		FD7B276E201861DC008DC676 /* ADXNativeAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADXNativeAdViewController.swift; sourceTree = "<group>"; };
 		FD7B2770201861F1008DC676 /* ADXNativeAdPlacerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADXNativeAdPlacerViewController.swift; sourceTree = "<group>"; };
 		FD7B277620186845008DC676 /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
 		FDBEFB4920188968004155D0 /* NativeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeView.swift; sourceTree = "<group>"; };
+		FDE5EAD520871CE400DC944F /* ADXAdMobRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADXAdMobRewardViewController.swift; sourceTree = "<group>"; };
 		FDE5F50B2077633A00D14429 /* ADXRewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADXRewardViewController.swift; sourceTree = "<group>"; };
 		FDE5F50D207763DB00D14429 /* ADXAppWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADXAppWallViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +79,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0BB62D2080D4E50020F908 /* AppLovinAdapter.framework in Frameworks */,
+				FD0BB62E2080D4E50020F908 /* MVSDKInterstitial.framework in Frameworks */,
+				FD0BB62F2080D4E50020F908 /* VungleSDK.framework in Frameworks */,
+				FD0BB6302080D4E50020F908 /* VungleAdapter.framework in Frameworks */,
+				FD0BB6312080D4E50020F908 /* MVSDKReward.framework in Frameworks */,
+				FD0BB6322080D4E50020F908 /* FacebookAdapter.framework in Frameworks */,
+				FD0BB6332080D4E50020F908 /* AppLovinSDK.framework in Frameworks */,
+				FD0BB6342080D4E50020F908 /* GoogleMobileAds.framework in Frameworks */,
+				FD0BB6352080D4E50020F908 /* MVSDKAppWall.framework in Frameworks */,
+				FD0BB6362080D4E50020F908 /* UnityAdapter.framework in Frameworks */,
+				FD0BB6372080D4E50020F908 /* UnityAds.framework in Frameworks */,
+				FD0BB6382080D4E50020F908 /* MVSDK.framework in Frameworks */,
+				FD0BB6392080D4E50020F908 /* CTSDK.framework in Frameworks */,
+				FD0BB63A2080D4E50020F908 /* DUModuleSDK.framework in Frameworks */,
 				6E62D078FEC63F8943A22953 /* Pods_ADXLibrary_iOSSample_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,13 +103,20 @@
 		5B0420C63E499343471E46FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FD0D729820185D370054F766 /* CTSDK.framework */,
-				FD0D729620185D370054F766 /* GoogleMobileAds.framework */,
-				FD0D729520185D370054F766 /* MVSDK.framework */,
-				FD0D729720185D370054F766 /* MVSDKAppWall.framework */,
-				FD0D729320185D370054F766 /* MVSDKInterstitial.framework */,
-				FD0D729920185D370054F766 /* MVSDKReward.framework */,
-				FD0D729420185D370054F766 /* UnityAds.framework */,
+				FD0BB61F2080D4E50020F908 /* AppLovinAdapter.framework */,
+				FD0BB6252080D4E50020F908 /* AppLovinSDK.framework */,
+				FD0BB62B2080D4E50020F908 /* CTSDK.framework */,
+				FD0BB62C2080D4E50020F908 /* DUModuleSDK.framework */,
+				FD0BB6242080D4E50020F908 /* FacebookAdapter.framework */,
+				FD0BB6262080D4E50020F908 /* GoogleMobileAds.framework */,
+				FD0BB62A2080D4E50020F908 /* MVSDK.framework */,
+				FD0BB6272080D4E50020F908 /* MVSDKAppWall.framework */,
+				FD0BB6202080D4E50020F908 /* MVSDKInterstitial.framework */,
+				FD0BB6232080D4E50020F908 /* MVSDKReward.framework */,
+				FD0BB6282080D4E50020F908 /* UnityAdapter.framework */,
+				FD0BB6292080D4E50020F908 /* UnityAds.framework */,
+				FD0BB6222080D4E50020F908 /* VungleAdapter.framework */,
+				FD0BB6212080D4E50020F908 /* VungleSDK.framework */,
 				F2C76B2EEFD3EE2F5BF70D1D /* Pods_ADXLibrary_iOSSample_Swift.framework */,
 			);
 			name = Frameworks;
@@ -128,6 +172,7 @@
 				FD7B276E201861DC008DC676 /* ADXNativeAdViewController.swift */,
 				FD7B2770201861F1008DC676 /* ADXNativeAdPlacerViewController.swift */,
 				FDE5F50B2077633A00D14429 /* ADXRewardViewController.swift */,
+				FDE5EAD520871CE400DC944F /* ADXAdMobRewardViewController.swift */,
 				FDE5F50D207763DB00D14429 /* ADXAppWallViewController.swift */,
 			);
 			path = ADXController;
@@ -153,7 +198,7 @@
 				FD0D727A20185A830054F766 /* Sources */,
 				FD0D727B20185A830054F766 /* Frameworks */,
 				FD0D727C20185A830054F766 /* Resources */,
-				9527CC45F9C40E976BC3F8D9 /* [CP] Embed Pods Frameworks */,
+				0AE4F17079AA062FD45EF315 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,7 +259,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9527CC45F9C40E976BC3F8D9 /* [CP] Embed Pods Frameworks */ = {
+		0AE4F17079AA062FD45EF315 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0D728420185A830054F766 /* ViewController.swift in Sources */,
+				FDE5EAD620871CE400DC944F /* ADXAdMobRewardViewController.swift in Sources */,
 				FDE5F50C2077633A00D14429 /* ADXRewardViewController.swift in Sources */,
 				FD7B2771201861F1008DC676 /* ADXNativeAdPlacerViewController.swift in Sources */,
 				FD7B276D201861C7008DC676 /* ADXFullScreenViewController.swift in Sources */,

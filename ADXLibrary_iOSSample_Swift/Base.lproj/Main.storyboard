@@ -105,9 +105,25 @@
                                     <segue destination="zsd-bf-jIM" kind="show" id="4rT-Rt-pz8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AR-lE-uUd">
+                                <rect key="frame" x="112" y="524" width="150" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="07f-8H-KA9"/>
+                                    <constraint firstAttribute="height" constant="40" id="Cex-zN-V13"/>
+                                </constraints>
+                                <state key="normal" title="Rewarded (AdMob)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jDK-nq-fAG" kind="show" id="n5N-Ba-CCK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="1AR-lE-uUd" firstAttribute="centerX" secondItem="lqX-fP-W3a" secondAttribute="centerX" id="4fE-qh-Uum"/>
+                            <constraint firstItem="1AR-lE-uUd" firstAttribute="top" secondItem="0cR-nT-fU6" secondAttribute="bottom" constant="30" id="6WA-Sh-qcF"/>
                             <constraint firstItem="0cR-nT-fU6" firstAttribute="top" secondItem="7GD-qx-MGV" secondAttribute="bottom" constant="30" id="BxA-Tk-rOh"/>
                             <constraint firstItem="0cR-nT-fU6" firstAttribute="centerX" secondItem="lqX-fP-W3a" secondAttribute="centerX" id="CSG-zI-O5B"/>
                             <constraint firstItem="gTi-ef-jWK" firstAttribute="top" secondItem="9Ri-ic-4PD" secondAttribute="bottom" constant="50" id="IYw-w6-mq7"/>
@@ -322,6 +338,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDU-dg-50s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-740" y="-152"/>
+        </scene>
+        <!--Ad Mob Reward View Controller-->
+        <scene sceneID="85b-Yr-7g8">
+            <objects>
+                <viewController id="jDK-nq-fAG" customClass="ADXAdMobRewardViewController" customModule="ADXLibrary_iOSSample_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tzH-3a-Efo"/>
+                        <viewControllerLayoutGuide type="bottom" id="1d4-8e-eQx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R3D-2P-D56">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnQ-Zi-b2b">
+                                <rect key="frame" x="112.5" y="313.5" width="150" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5e7-vr-6A7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="BGy-sC-hgI"/>
+                                </constraints>
+                                <state key="normal" title="ShowAd">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectShowAd:" destination="jDK-nq-fAG" eventType="touchUpInside" id="7Pl-JW-V1H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pnQ-Zi-b2b" firstAttribute="centerX" secondItem="R3D-2P-D56" secondAttribute="centerX" id="y4I-V7-vBU"/>
+                            <constraint firstItem="pnQ-Zi-b2b" firstAttribute="centerY" secondItem="R3D-2P-D56" secondAttribute="centerY" id="zAQ-rF-dGe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEQ-Po-Plm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1828" y="569"/>
         </scene>
         <!--Reward View Controller-->
         <scene sceneID="IaK-jH-i7s">

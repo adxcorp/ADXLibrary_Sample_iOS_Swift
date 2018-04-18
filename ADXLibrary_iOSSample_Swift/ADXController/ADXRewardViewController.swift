@@ -10,7 +10,7 @@ import UIKit
 import MoPub
 
 class ADXRewardViewController: UIViewController, MPRewardedVideoDelegate {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,7 +19,6 @@ class ADXRewardViewController: UIViewController, MPRewardedVideoDelegate {
     }
     
     @IBAction func selectShowAd(_ sender: Any) {
-        
         if (MPRewardedVideo.hasAdAvailable(forAdUnitID: REWARDEDVIDEO_AD_UNIT_ID) == true) {
             MPRewardedVideo.presentAd(forAdUnitID: REWARDEDVIDEO_AD_UNIT_ID, from: self, with: nil)
         } else {
@@ -31,7 +30,6 @@ class ADXRewardViewController: UIViewController, MPRewardedVideoDelegate {
     
     func rewardedVideoAdDidLoad(forAdUnitID adUnitID: String!) {
         print("rewardedVideoAdDidLoad :", adUnitID)
-        
     }
     
     func rewardedVideoAdDidAppear(forAdUnitID adUnitID: String!) {

@@ -8,6 +8,7 @@
 
 import UIKit
 import ADXLibrary
+import GoogleMobileAds
 
 let BANNER_AD_UNIT_ID           = "a9bcfae03030442da3ed277aff98713c"
 let INTERSTITIAL_AD_UNIT_ID     = "f6110c24fa8a4daf9c6159f5ea181e7d"
@@ -22,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         NativeAdFactory.sharedInstance().setRenderingViewClass(NATIVE_AD_UNIT_ID, renderingViewClass: NativeAdView.self)
         NativeAdFactory.sharedInstance().preloadAd(NATIVE_AD_UNIT_ID)
+        
+        GADRewardBasedVideoAd.sharedInstance().load(GADRequest(), withAdUnitID: "ca-app-pub-7466439784264697~7972777801")
         
         return true
     }
