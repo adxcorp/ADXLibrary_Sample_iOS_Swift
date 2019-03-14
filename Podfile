@@ -1,10 +1,14 @@
+source 'https://adx-developer:developer2017@github.com/adxcorp/AdxLibrary_iOS_Release.git'
+source 'https://github.com/CocoaPods/Specs.git'
 # Uncomment the next line to define a global platform for your project
 platform :ios, '8.0'
 
 target 'ADXLibrary_iOSSample_Swift' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   use_frameworks!
 
-pod 'ADXLibrary', :git => 'https://please:contact@github.com/adxcorp/ADXLibrary_iOS.git', :tag => '1.4.4'
+  # Pods for ADXLibrary_iOSSample
 
+ pod 'ADXLibrary', '1.5.11'
+    # pod 'ADXLibrary', :path => '../AdxLibrary_iOS'
 end

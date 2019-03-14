@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import MoPub
 
 class ADXRewardViewController: UIViewController, MPRewardedVideoDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        MoPub.sharedInstance().initializeRewardedVideo(withGlobalMediationSettings: nil, delegate: self)
+        MPRewardedVideo.setDelegate(self, forAdUnitId: REWARDEDVIDEO_AD_UNIT_ID)
         MPRewardedVideo.loadAd(withAdUnitID: REWARDEDVIDEO_AD_UNIT_ID, withMediationSettings: nil)
     }
     

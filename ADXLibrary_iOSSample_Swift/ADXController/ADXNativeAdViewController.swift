@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import MoPub
-import ADXLibrary
 
 class ADXNativeAdViewController: UIViewController, NativeAdFactoryDelegate, MPNativeAdDelegate {
 

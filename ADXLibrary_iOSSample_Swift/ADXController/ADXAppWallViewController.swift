@@ -7,18 +7,17 @@
 //
 
 import UIKit
-import ADXLibrary
 
 class ADXAppWallViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AppWallFactory.init("100740", adUnitId: "34458")
-        AppWallFactory.preloadAppWall()
+//        AppWallFactory.init("100740", adUnitId: "34458")
+//        AppWallFactory.preloadAppWall()
     }
     @IBAction func selectShowAd(_ sender: Any) {
-        AppWallFactory.showAppWall(self)
+//        AppWallFactory.showAppWall(self)
     }
     
     override func didReceiveMemoryWarning() {

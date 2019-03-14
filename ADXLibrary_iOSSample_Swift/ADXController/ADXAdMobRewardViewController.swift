@@ -8,7 +8,6 @@
 
 import UIKit
 import GoogleMobileAds
-import VungleAdapter
 
 class ADXAdMobRewardViewController: UIViewController, GADRewardBasedVideoAdDelegate {
 
@@ -24,13 +23,13 @@ class ADXAdMobRewardViewController: UIViewController, GADRewardBasedVideoAdDeleg
             GADRewardBasedVideoAd.sharedInstance().present(fromRootViewController: self)
         } else {
             let request = GADRequest()
-            let extras = VungleAdNetworkExtras.init()
+//            let extras = VungleAdNetworkExtras.init()
             let placements = NSArray.init(objects: "DEFAULT-4197699", "SAMPLE_IOS_REWARDED_VIDEO-2228390")
             
-            let placementsArray = placements as NSArray as! [String]
-            extras.allPlacements = placementsArray
+//            let placementsArray = placements as NSArray as! [String]
+//            extras.allPlacements = placementsArray
             
-            request.register(extras)
+//            request.register(extras)
             request.testDevices = ["e527e0336ebd9354411d932aa50910ca"]
             
             GADRewardBasedVideoAd.sharedInstance().load(request, withAdUnitID: "ca-app-pub-7466439784264697/6572954274")

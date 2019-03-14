@@ -7,21 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E62D078FEC63F8943A22953 /* Pods_ADXLibrary_iOSSample_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C76B2EEFD3EE2F5BF70D1D /* Pods_ADXLibrary_iOSSample_Swift.framework */; };
-		FD0BB62D2080D4E50020F908 /* AppLovinAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB61F2080D4E50020F908 /* AppLovinAdapter.framework */; };
-		FD0BB62E2080D4E50020F908 /* MVSDKInterstitial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6202080D4E50020F908 /* MVSDKInterstitial.framework */; };
-		FD0BB62F2080D4E50020F908 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6212080D4E50020F908 /* VungleSDK.framework */; };
-		FD0BB6302080D4E50020F908 /* VungleAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6222080D4E50020F908 /* VungleAdapter.framework */; };
-		FD0BB6312080D4E50020F908 /* MVSDKReward.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6232080D4E50020F908 /* MVSDKReward.framework */; };
-		FD0BB6322080D4E50020F908 /* FacebookAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6242080D4E50020F908 /* FacebookAdapter.framework */; };
-		FD0BB6332080D4E50020F908 /* AppLovinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6252080D4E50020F908 /* AppLovinSDK.framework */; };
-		FD0BB6342080D4E50020F908 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6262080D4E50020F908 /* GoogleMobileAds.framework */; };
-		FD0BB6352080D4E50020F908 /* MVSDKAppWall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6272080D4E50020F908 /* MVSDKAppWall.framework */; };
-		FD0BB6362080D4E50020F908 /* UnityAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6282080D4E50020F908 /* UnityAdapter.framework */; };
-		FD0BB6372080D4E50020F908 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB6292080D4E50020F908 /* UnityAds.framework */; };
-		FD0BB6382080D4E50020F908 /* MVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB62A2080D4E50020F908 /* MVSDK.framework */; };
-		FD0BB6392080D4E50020F908 /* CTSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB62B2080D4E50020F908 /* CTSDK.framework */; };
-		FD0BB63A2080D4E50020F908 /* DUModuleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0BB62C2080D4E50020F908 /* DUModuleSDK.framework */; };
+		F87A4C8F423022DD86D4AE5D /* Pods_ADXLibrary_iOSSample_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3B4D5D5EB6327F6AFA0DFE /* Pods_ADXLibrary_iOSSample_Swift.framework */; };
 		FD0D728220185A830054F766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D728120185A830054F766 /* AppDelegate.swift */; };
 		FD0D728420185A830054F766 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D728320185A830054F766 /* ViewController.swift */; };
 		FD0D728720185A830054F766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0D728520185A830054F766 /* Main.storyboard */; };
@@ -39,8 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A33628E3223A16BE00CDA61E /* ADXLibrary_iOSSample_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADXLibrary_iOSSample_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB3B4D5D5EB6327F6AFA0DFE /* Pods_ADXLibrary_iOSSample_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADXLibrary_iOSSample_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FA98721727C97E25DD0A2B /* Pods-ADXLibrary_iOSSample_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXLibrary_iOSSample_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift.release.xcconfig"; sourceTree = "<group>"; };
-		F2C76B2EEFD3EE2F5BF70D1D /* Pods_ADXLibrary_iOSSample_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADXLibrary_iOSSample_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F385CEB2A965661614E6B73E /* Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		FD0BB61F2080D4E50020F908 /* AppLovinAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppLovinAdapter.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/AppLovinAdapter.framework; sourceTree = "<group>"; };
 		FD0BB6202080D4E50020F908 /* MVSDKInterstitial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MVSDKInterstitial.framework; path = Pods/ADXLibrary/ADXLibrary/Dependencies/MVSDKInterstitial.framework; sourceTree = "<group>"; };
@@ -79,21 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0BB62D2080D4E50020F908 /* AppLovinAdapter.framework in Frameworks */,
-				FD0BB62E2080D4E50020F908 /* MVSDKInterstitial.framework in Frameworks */,
-				FD0BB62F2080D4E50020F908 /* VungleSDK.framework in Frameworks */,
-				FD0BB6302080D4E50020F908 /* VungleAdapter.framework in Frameworks */,
-				FD0BB6312080D4E50020F908 /* MVSDKReward.framework in Frameworks */,
-				FD0BB6322080D4E50020F908 /* FacebookAdapter.framework in Frameworks */,
-				FD0BB6332080D4E50020F908 /* AppLovinSDK.framework in Frameworks */,
-				FD0BB6342080D4E50020F908 /* GoogleMobileAds.framework in Frameworks */,
-				FD0BB6352080D4E50020F908 /* MVSDKAppWall.framework in Frameworks */,
-				FD0BB6362080D4E50020F908 /* UnityAdapter.framework in Frameworks */,
-				FD0BB6372080D4E50020F908 /* UnityAds.framework in Frameworks */,
-				FD0BB6382080D4E50020F908 /* MVSDK.framework in Frameworks */,
-				FD0BB6392080D4E50020F908 /* CTSDK.framework in Frameworks */,
-				FD0BB63A2080D4E50020F908 /* DUModuleSDK.framework in Frameworks */,
-				6E62D078FEC63F8943A22953 /* Pods_ADXLibrary_iOSSample_Swift.framework in Frameworks */,
+				F87A4C8F423022DD86D4AE5D /* Pods_ADXLibrary_iOSSample_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +90,7 @@
 				FD0BB6292080D4E50020F908 /* UnityAds.framework */,
 				FD0BB6222080D4E50020F908 /* VungleAdapter.framework */,
 				FD0BB6212080D4E50020F908 /* VungleSDK.framework */,
-				F2C76B2EEFD3EE2F5BF70D1D /* Pods_ADXLibrary_iOSSample_Swift.framework */,
+				AB3B4D5D5EB6327F6AFA0DFE /* Pods_ADXLibrary_iOSSample_Swift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,6 +133,7 @@
 				FD0D728820185A830054F766 /* Assets.xcassets */,
 				FD0D728A20185A830054F766 /* LaunchScreen.storyboard */,
 				FD0D728D20185A830054F766 /* Info.plist */,
+				A33628E3223A16BE00CDA61E /* ADXLibrary_iOSSample_Swift-Bridging-Header.h */,
 			);
 			path = ADXLibrary_iOSSample_Swift;
 			sourceTree = "<group>";
@@ -199,6 +173,7 @@
 				FD0D727B20185A830054F766 /* Frameworks */,
 				FD0D727C20185A830054F766 /* Resources */,
 				0AE4F17079AA062FD45EF315 /* [CP] Embed Pods Frameworks */,
+				396722FFAE69096240129C31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,7 +196,7 @@
 				TargetAttributes = {
 					FD0D727D20185A830054F766 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -266,17 +241,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ADXLibrary/ADXLibrary.framework",
+				"${PODS_ROOT}/ADXLibrary/ios/FBAudienceNetwork.framework",
 				"${BUILT_PRODUCTS_DIR}/mopub-ios-sdk/MoPub.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ADXLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAudienceNetwork.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoPub.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		396722FFAE69096240129C31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift-resources.sh",
+				"${PODS_ROOT}/ADXLibrary/assets/ZplayMuteListener.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZplayMuteListener.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AAD54C37840A65EF4F81E39A /* [CP] Check Pods Manifest.lock */ = {
@@ -466,17 +463,11 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-framework",
-					"\"ADXLibrary\"",
-					"-framework",
-					"\"MoPub\"",
-					"-framework",
-					"\"CTSDK\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adxcorp.adxdev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ADXLibrary_iOSSample_Swift/ADXLibrary_iOSSample_Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -503,17 +494,11 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-framework",
-					"\"ADXLibrary\"",
-					"-framework",
-					"\"MoPub\"",
-					"-framework",
-					"\"CTSDK\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adxcorp.adxdev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ADXLibrary_iOSSample_Swift/ADXLibrary_iOSSample_Swift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ADXLibrary
 import GoogleMobileAds
 
 let BANNER_AD_UNIT_ID           = "a9bcfae03030442da3ed277aff98713c"

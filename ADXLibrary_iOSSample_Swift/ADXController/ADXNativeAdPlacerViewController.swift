@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ADXLibrary
 
 class ADXNativeAdPlacerViewController: UIViewController, UICollectionViewDataSource {
     
