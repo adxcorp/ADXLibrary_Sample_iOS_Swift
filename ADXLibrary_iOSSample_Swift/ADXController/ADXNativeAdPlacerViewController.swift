@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MoPub
 
 class ADXNativeAdPlacerViewController: UIViewController, UICollectionViewDataSource {
     

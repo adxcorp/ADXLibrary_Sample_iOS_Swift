@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MoPub
 
 class ADXFullScreenViewController: UIViewController, MPInterstitialAdControllerDelegate {
 

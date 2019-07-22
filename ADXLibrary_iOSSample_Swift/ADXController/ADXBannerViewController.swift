@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MoPub
 
 class ADXBannerViewController: UIViewController, MPAdViewDelegate {
     fileprivate var mopubAdView : MPAdView!

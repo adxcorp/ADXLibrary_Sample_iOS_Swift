@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MoPub
 
 class ADXRewardViewController: UIViewController, MPRewardedVideoDelegate {
     
@@ -28,50 +29,50 @@ class ADXRewardViewController: UIViewController, MPRewardedVideoDelegate {
     // MARK: - MPRewardedVideoDelegate
     
     func rewardedVideoAdDidLoad(forAdUnitID adUnitID: String!) {
-        print("rewardedVideoAdDidLoad :", adUnitID)
+        print("rewardedVideoAdDidLoad :", adUnitID!)
     }
     
     func rewardedVideoAdDidAppear(forAdUnitID adUnitID: String!) {
-        print("rewardedVideoAdDidAppear :", adUnitID)
+        print("rewardedVideoAdDidAppear :", adUnitID!)
     }
 
     func rewardedVideoAdDidExpire(forAdUnitID adUnitID: String!) {
-        print("rewardedVideoAdDidExpire :", adUnitID)
+        print("rewardedVideoAdDidExpire :", adUnitID!)
     }
     
     func rewardedVideoAdWillAppear(forAdUnitID adUnitID: String!) {
-        print("rewardedVideoAdWillAppear :", adUnitID)
+        print("rewardedVideoAdWillAppear :", adUnitID!)
     }
     
     func rewardedVideoAdDidDisappear(forAdUnitID adUnitID: String!) {
-        print("rewardedVideoAdDidDisappear :", adUnitID)
+        print("rewardedVideoAdDidDisappear :", adUnitID!)
     }
     
     func rewardedVideoAdWillDisappear(forAdUnitID adUnitID: String!) {
-        print("rewardedVideoAdWillDisappear :", adUnitID)
+        print("rewardedVideoAdWillDisappear :", adUnitID!)
     }
     
     func rewardedVideoAdDidReceiveTapEvent(forAdUnitID adUnitID: String!) {
-        print("rewardedVideoAdDidReceiveTapEvent :", adUnitID)
+        print("rewardedVideoAdDidReceiveTapEvent :", adUnitID!)
     }
     
     func rewardedVideoAdWillLeaveApplication(forAdUnitID adUnitID: String!) {
-        print("rewardedVideoAdWillLeaveApplication :", adUnitID)
+        print("rewardedVideoAdWillLeaveApplication :", adUnitID!)
     }
     
     func rewardedVideoAdDidFailToLoad(forAdUnitID adUnitID: String!, error: Error!) {
-        print("rewardedVideoAdDidFailToLoad :", adUnitID)
-        print("error :", error)
+        print("rewardedVideoAdDidFailToLoad :", adUnitID!)
+        print("error :", error!)
     }
     
     func rewardedVideoAdDidFailToPlay(forAdUnitID adUnitID: String!, error: Error!) {
-        print("rewardedVideoAdDidFailToPlay :", adUnitID)
-        print("error :", error)
+        print("rewardedVideoAdDidFailToPlay :", adUnitID!)
+        print("error :", error!)
     }
     
     func rewardedVideoAdShouldReward(forAdUnitID adUnitID: String!, reward: MPRewardedVideoReward!) {
-        print("rewardedVideoAdShouldReward :", adUnitID)
-        print("reward :", reward.currencyType)
+        print("rewardedVideoAdShouldReward :", adUnitID!)
+        print("reward :", reward.currencyType!)
     }
     
     // MARK: -

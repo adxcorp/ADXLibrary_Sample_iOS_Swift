@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MoPub
 
 class ADXNativeAdViewController: UIViewController, NativeAdFactoryDelegate, MPNativeAdDelegate {
 
@@ -59,7 +60,7 @@ class ADXNativeAdViewController: UIViewController, NativeAdFactoryDelegate, MPNa
     }
     
     func onFailure(_ adUnitId: String!) {
-        print("onFailure :", adUnitId)
+        print("onFailure :", adUnitId!)
     }
     
     // MARK: -
