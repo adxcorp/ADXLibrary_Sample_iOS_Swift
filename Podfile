@@ -1,4 +1,4 @@
-source 'https://adx-developer:developer2017@github.com/adxcorp/AdxLibrary_iOS_Release.git'
+source 'https://adx-developer:developer2017!@github.com/adxcorp/AdxLibrary_iOS_Release.git'
 source 'https://github.com/CocoaPods/Specs.git'
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
