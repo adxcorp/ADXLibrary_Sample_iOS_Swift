@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0C1D34DA9A2960F4E34BEA5 /* Pods_ADXLibrary_iOSSample_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99829BCFD5408E0A42631FB6 /* Pods_ADXLibrary_iOSSample_Swift.framework */; };
 		FD0D728220185A830054F766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D728120185A830054F766 /* AppDelegate.swift */; };
 		FD0D728420185A830054F766 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D728320185A830054F766 /* ViewController.swift */; };
 		FD0D728720185A830054F766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0D728520185A830054F766 /* Main.storyboard */; };
@@ -24,9 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		53192C3871A658261B179209 /* Pods-ADXLibrary_iOSSample_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXLibrary_iOSSample_Swift.release.xcconfig"; path = "Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		03DC00BD8C529D253AD3DE5B /* Pods-ADXLibrary_iOSSample_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXLibrary_iOSSample_Swift.release.xcconfig"; path = "Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		99829BCFD5408E0A42631FB6 /* Pods_ADXLibrary_iOSSample_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADXLibrary_iOSSample_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33628E3223A16BE00CDA61E /* ADXLibrary_iOSSample_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADXLibrary_iOSSample_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		F74EACA213049E9189C47BB6 /* Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig"; path = "Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		E281A09D508E93E0EDF6F3C1 /* Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig"; path = "Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		FD0D727E20185A830054F766 /* ADXLibrary_iOSSample_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADXLibrary_iOSSample_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0D728120185A830054F766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD0D728320185A830054F766 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,15 +52,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0C1D34DA9A2960F4E34BEA5 /* Pods_ADXLibrary_iOSSample_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C1BF542CBAC0971BDD82B5FC /* Frameworks */ = {
+		1EBE17B8090BC530A54D8E63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99829BCFD5408E0A42631FB6 /* Pods_ADXLibrary_iOSSample_Swift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -66,8 +70,8 @@
 		EEA1CBDA12441423690E3464 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F74EACA213049E9189C47BB6 /* Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig */,
-				53192C3871A658261B179209 /* Pods-ADXLibrary_iOSSample_Swift.release.xcconfig */,
+				E281A09D508E93E0EDF6F3C1 /* Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig */,
+				03DC00BD8C529D253AD3DE5B /* Pods-ADXLibrary_iOSSample_Swift.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -78,7 +82,7 @@
 				FD0D728020185A830054F766 /* ADXLibrary_iOSSample_Swift */,
 				FD0D727F20185A830054F766 /* Products */,
 				EEA1CBDA12441423690E3464 /* Pods */,
-				C1BF542CBAC0971BDD82B5FC /* Frameworks */,
+				1EBE17B8090BC530A54D8E63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,11 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD0D729020185A830054F766 /* Build configuration list for PBXNativeTarget "ADXLibrary_iOSSample_Swift" */;
 			buildPhases = (
-				C3D6BB2E80716A6CA662229F /* [CP] Check Pods Manifest.lock */,
+				018CFAD446CE9F6822E8278A /* [CP] Check Pods Manifest.lock */,
 				FD0D727A20185A830054F766 /* Sources */,
 				FD0D727B20185A830054F766 /* Frameworks */,
 				FD0D727C20185A830054F766 /* Resources */,
-				BCE6C83867E526228ACD082C /* [CP] Embed Pods Frameworks */,
+				C1FBE9B4DBB2F7C1F6342851 /* [CP] Embed Pods Frameworks */,
+				83C68B6C970BE5721A8F31B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,29 +206,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BCE6C83867E526228ACD082C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/mopub-ios-sdk/MoPub.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoPub.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C3D6BB2E80716A6CA662229F /* [CP] Check Pods Manifest.lock */ = {
+		018CFAD446CE9F6822E8278A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,6 +226,56 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83C68B6C970BE5721A8F31B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift-resources.sh",
+				"${PODS_ROOT}/ADXLibrary/assets/biForIOs.png",
+				"${PODS_ROOT}/ADXLibrary/assets/biForIOs@2x.png",
+				"${PODS_ROOT}/ADXLibrary/assets/biForIOs@3x.png",
+				"${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks/BUAdSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/biForIOs.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/biForIOs@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/biForIOs@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1FBE9B4DBB2F7C1F6342851 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/mopub-ios-sdk/MoPub.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoPub.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADXLibrary_iOSSample_Swift/Pods-ADXLibrary_iOSSample_Swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -337,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -390,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -400,7 +433,7 @@
 		};
 		FD0D729120185A830054F766 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F74EACA213049E9189C47BB6 /* Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig */;
+			baseConfigurationReference = E281A09D508E93E0EDF6F3C1 /* Pods-ADXLibrary_iOSSample_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -408,13 +441,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AMNALPNZ69;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/ADXLibrary/ADXLibrary/Dependencies",
 				);
 				INFOPLIST_FILE = ADXLibrary_iOSSample_Swift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -431,7 +466,7 @@
 		};
 		FD0D729220185A830054F766 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53192C3871A658261B179209 /* Pods-ADXLibrary_iOSSample_Swift.release.xcconfig */;
+			baseConfigurationReference = 03DC00BD8C529D253AD3DE5B /* Pods-ADXLibrary_iOSSample_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -439,13 +474,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AMNALPNZ69;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/ADXLibrary/ADXLibrary/Dependencies",
 				);
 				INFOPLIST_FILE = ADXLibrary_iOSSample_Swift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

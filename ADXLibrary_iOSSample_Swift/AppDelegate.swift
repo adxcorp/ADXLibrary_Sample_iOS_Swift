@@ -9,6 +9,9 @@
 import UIKit
 import GoogleMobileAds
 import MoPub
+import ADXLibrary
+import AppTrackingTransparency
+import FBAudienceNetwork
 
 let BANNER_AD_UNIT_ID           = "a9bcfae03030442da3ed277aff98713c"
 let INTERSTITIAL_AD_UNIT_ID     = "f6110c24fa8a4daf9c6159f5ea181e7d"
@@ -21,14 +24,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+        if #available(iOS 14, *) {
+            // ATT 알림을 통한 권한 요청
+            ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
+                // 광고추적제한 설정 (페이스북 광고)
+                if (ATTrackingManager.trackingAuthorizationStatus == ATTrackingManager.AuthorizationStatus.authorized ||
+                        ATTrackingManager.trackingAuthorizationStatus == ATTrackingManager.AuthorizationStatus.notDetermined) {
+                    FBAdSettings.setAdvertiserTrackingEnabled(true)
+                } else {
+                    FBAdSettings.setAdvertiserTrackingEnabled(false)
+                }
+                
+                // 광고 SDK 초기화
+                self.initializeAdSdk()
+              })
+        } else {
+            // 광고 SDK 초기화
+            initializeAdSdk()
+        }
+        
+        return true
+    }
+    
+    func initializeAdSdk() {
         MoPub.sharedInstance().initializeSdk(with: MPMoPubConfiguration(adUnitIdForAppInitialization: BANNER_AD_UNIT_ID), completion:{
-            NativeAdFactory.sharedInstance().setRenderingViewClass(NATIVE_AD_UNIT_ID, renderingViewClass: NativeAdView.self)
-            NativeAdFactory.sharedInstance().preloadAd(NATIVE_AD_UNIT_ID)
+            ADXGDPR.sharedInstance()?.showADXConsent({ (ADXConsentState, Bool) in
+                NativeAdFactory.sharedInstance().setRenderingViewClass(NATIVE_AD_UNIT_ID, renderingViewClass: NativeAdView.self)
+                NativeAdFactory.sharedInstance().preloadAd(NATIVE_AD_UNIT_ID)
+            })
         })
         
         GADMobileAds.sharedInstance().start(completionHandler:nil)
-        
-        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -9,62 +9,59 @@
 import UIKit
 import GoogleMobileAds
 
-class ADXAdMobRewardViewController: UIViewController, GADRewardBasedVideoAdDelegate {
+class ADXAdMobRewardViewController: UIViewController, GADRewardedAdDelegate {
+    
+    var rewardedAd: GADRewardedAd?
+    
+    var REWARDEDVIDEO_AD_UNIT_ID = "ca-app-pub-7466439784264697/6572954274"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [ "e20af00f58944a24199be16334aa148f" ];
         
-        GADRewardBasedVideoAd.sharedInstance().delegate = self
+        createAndLoadRewardedAd()
     }
+    
+    func createAndLoadRewardedAd() {
+      rewardedAd = GADRewardedAd(adUnitID: REWARDEDVIDEO_AD_UNIT_ID)
+      rewardedAd?.load(GADRequest()) { error in
+        if let error = error {
+          print("Loading failed: \(error)")
+        } else {
+          print("Loading Succeeded")
+        }
+      }
+    }
+    
     @IBAction func selectShowAd(_ sender: Any) {
         
-        if(GADRewardBasedVideoAd.sharedInstance().isReady) {
-            GADRewardBasedVideoAd.sharedInstance().present(fromRootViewController: self)
+        if rewardedAd?.isReady == true {
+             rewardedAd?.present(fromRootViewController: self, delegate:self)
         } else {
-            let request = GADRequest()
-//            let extras = VungleAdNetworkExtras.init()
-            let placements = NSArray.init(objects: "DEFAULT-4197699", "SAMPLE_IOS_REWARDED_VIDEO-2228390")
-            
-//            let placementsArray = placements as NSArray as! [String]
-//            extras.allPlacements = placementsArray
-            
-//            request.register(extras)
-            request.testDevices = ["e527e0336ebd9354411d932aa50910ca"]
-            
-            GADRewardBasedVideoAd.sharedInstance().load(request, withAdUnitID: "ca-app-pub-7466439784264697/6572954274")
+            createAndLoadRewardedAd()
         }
     }
     
-    // MARK: - GADRewardBasedVideoAdDelegate
+    // MARK: - GADRewardedAdDelegate
     
-    func rewardBasedVideoAdDidOpen(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
-        print("rewardBasedVideoAdDidOpen")
+    /// Tells the delegate that the user earned a reward.
+    func rewardedAd(_ rewardedAd: GADRewardedAd, userDidEarn reward: GADAdReward) {
+      print("Reward received with currency: \(reward.type), amount \(reward.amount).")
     }
-    
-    func rewardBasedVideoAdDidClose(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
-        print("rewardBasedVideoAdDidClose")
+    /// Tells the delegate that the rewarded ad was presented.
+    func rewardedAdDidPresent(_ rewardedAd: GADRewardedAd) {
+      print("Rewarded ad presented.")
     }
-    
-    func rewardBasedVideoAdDidReceive(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
-        print("rewardBasedVideoAdDidReceive")
+    /// Tells the delegate that the rewarded ad was dismissed.
+    func rewardedAdDidDismiss(_ rewardedAd: GADRewardedAd) {
+      print("Rewarded ad dismissed.")
+        
+        createAndLoadRewardedAd()
     }
-    
-    func rewardBasedVideoAdDidStartPlaying(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
-        print("rewardBasedVideoAdDidStartPlaying")
-    }
-    
-    func rewardBasedVideoAdWillLeaveApplication(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
-        print("rewardBasedVideoAdWillLeaveApplication")
-    }
-    
-    func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd, didFailToLoadWithError error: Error) {
-        print("rewardBasedVideoAd")
-        print("error :", error)
-    }
-    
-    func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd, didRewardUserWith reward: GADAdReward) {
-        print("rewardBasedVideoAd")
+    /// Tells the delegate that the rewarded ad failed to present.
+    func rewardedAd(_ rewardedAd: GADRewardedAd, didFailToPresentWithError error: Error) {
+      print("Rewarded ad failed to present.")
     }
 
     // MARK: -
