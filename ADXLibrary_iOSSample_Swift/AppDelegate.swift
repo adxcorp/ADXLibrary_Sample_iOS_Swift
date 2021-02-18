@@ -28,8 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // ATT 알림을 통한 권한 요청
             ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
                 // 광고추적제한 설정 (페이스북 광고)
-                if (ATTrackingManager.trackingAuthorizationStatus == ATTrackingManager.AuthorizationStatus.authorized ||
-                        ATTrackingManager.trackingAuthorizationStatus == ATTrackingManager.AuthorizationStatus.notDetermined) {
+                if (ATTrackingManager.trackingAuthorizationStatus == ATTrackingManager.AuthorizationStatus.authorized) {
                     FBAdSettings.setAdvertiserTrackingEnabled(true)
                 } else {
                     FBAdSettings.setAdvertiserTrackingEnabled(false)
