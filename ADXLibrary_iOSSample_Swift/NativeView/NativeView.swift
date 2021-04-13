@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MoPub
+import MoPubSDK
 
 class NativeAdView: UIView, MPNativeAdRendering {
 

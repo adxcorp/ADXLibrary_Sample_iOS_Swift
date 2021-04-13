@@ -8,7 +8,7 @@
 
 import UIKit
 import GoogleMobileAds
-import MoPub
+import MoPubSDK
 import ADXLibrary
 import AppTrackingTransparency
 import FBAudienceNetwork

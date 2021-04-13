@@ -7,55 +7,48 @@
 //
 
 import UIKit
-import MoPub
+import MoPubSDK
 
 class ADXBannerViewController: UIViewController, MPAdViewDelegate {
-    fileprivate var mopubAdView : MPAdView!
-
+    fileprivate var adView : MPAdView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupADBanner()
+        adView = MPAdView(adUnitId: BANNER_AD_UNIT_ID)
+        adView.delegate = self
+        
+        let bannerSize = CGSize(width: UIScreen.main.bounds.size.width, height: kMPPresetMaxAdSize50Height.height)
+        adView.frame = CGRect(x: (UIScreen.main.bounds.size.width - bannerSize.width) / 2,
+                              y: UIScreen.main.bounds.size.height - bannerSize.height,
+                              width: bannerSize.width,
+                              height: bannerSize.height)
+        view.addSubview(adView)
+        adView.loadAd()
     }
     
-    func setupADBanner() {
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
         
-        mopubAdView = MPAdView(adUnitId: BANNER_AD_UNIT_ID, size: MOPUB_BANNER_SIZE)
-        mopubAdView.delegate = self
-        var frame = mopubAdView.frame
-        let size = mopubAdView.adContentViewSize()
+        let bannerSize = adView.adContentViewSize()
+        let centeredX = (size.width - bannerSize.width) / 2
+        let bottomAlignedY = size.height - bannerSize.height
         
-        frame.origin = CGPoint(x: (UIScreen.main.bounds.width - size.width)/2,
-                               y: UIScreen.main.bounds.height - size.height)
-        mopubAdView.frame = frame
-        mopubAdView.loadAd()
-        
-        self.view.addSubview(mopubAdView)
-        
+        adView.frame = CGRect(x: centeredX, y: bottomAlignedY, width: bannerSize.width, height: bannerSize.height)
     }
-    
     
     // MARK: - MPAdViewDelegate
-    
-    func adViewDidLoadAd(_ view: MPAdView!) {
-        print("adViewDidLoadAd")
-    }
-    
-    func adViewDidFail(toLoadAd view: MPAdView!) {
-        print("adViewDidFail")
-    }
     
     func viewControllerForPresentingModalView() -> UIViewController! {
         return self
     }
     
-    // MARK: -
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func adViewDidLoadAd(_ view: MPAdView!, adSize: CGSize) {
+        print("adViewDidLoadAd : \(adSize)")
     }
     
-    
+    func adView(_ view: MPAdView!, didFailToLoadAdWithError error: Error!) {
+        print("adViewDidFail")
+    }
 
 }

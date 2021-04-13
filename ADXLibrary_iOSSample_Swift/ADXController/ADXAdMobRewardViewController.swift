@@ -9,10 +9,9 @@
 import UIKit
 import GoogleMobileAds
 
-class ADXAdMobRewardViewController: UIViewController, GADRewardedAdDelegate {
+class ADXAdMobRewardViewController: UIViewController, GADFullScreenContentDelegate {
     
     var rewardedAd: GADRewardedAd?
-    
     var REWARDEDVIDEO_AD_UNIT_ID = "ca-app-pub-7466439784264697/6572954274"
 
     override func viewDidLoad() {
@@ -24,44 +23,47 @@ class ADXAdMobRewardViewController: UIViewController, GADRewardedAdDelegate {
     }
     
     func createAndLoadRewardedAd() {
-      rewardedAd = GADRewardedAd(adUnitID: REWARDEDVIDEO_AD_UNIT_ID)
-      rewardedAd?.load(GADRequest()) { error in
-        if let error = error {
-          print("Loading failed: \(error)")
-        } else {
-          print("Loading Succeeded")
+        GADRewardedAd.load(withAdUnitID: REWARDEDVIDEO_AD_UNIT_ID, request: GADRequest()) { (rewardedAd, error) in
+            if let error = error {
+                print("Loading failed: \(error)")
+            } else {
+                print("Loading Succeeded")
+                self.rewardedAd = rewardedAd;
+                self.rewardedAd?.fullScreenContentDelegate = self;
+            }
         }
-      }
     }
     
     @IBAction func selectShowAd(_ sender: Any) {
-        
-        if rewardedAd?.isReady == true {
-             rewardedAd?.present(fromRootViewController: self, delegate:self)
+        if (rewardedAd != nil) {
+            rewardedAd?.present(fromRootViewController: self, userDidEarnRewardHandler: {
+                if let reward = self.rewardedAd?.adReward {
+                    print("Reward received with currency: \(reward.type), amount \(reward.amount).")
+                }
+            })
         } else {
             createAndLoadRewardedAd()
         }
     }
     
-    // MARK: - GADRewardedAdDelegate
+    // MARK: - GADFullScreenContentDelegate
     
-    /// Tells the delegate that the user earned a reward.
-    func rewardedAd(_ rewardedAd: GADRewardedAd, userDidEarn reward: GADAdReward) {
-      print("Reward received with currency: \(reward.type), amount \(reward.amount).")
+    func adDidRecordImpression(_ ad: GADFullScreenPresentingAd) {
+        print("adDidRecordImpression")
     }
-    /// Tells the delegate that the rewarded ad was presented.
-    func rewardedAdDidPresent(_ rewardedAd: GADRewardedAd) {
-      print("Rewarded ad presented.")
+    
+    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+        print("Rewarded ad failed to present.")
     }
-    /// Tells the delegate that the rewarded ad was dismissed.
-    func rewardedAdDidDismiss(_ rewardedAd: GADRewardedAd) {
-      print("Rewarded ad dismissed.")
-        
-        createAndLoadRewardedAd()
+    
+    func adDidPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print("Rewarded ad presented.")
     }
-    /// Tells the delegate that the rewarded ad failed to present.
-    func rewardedAd(_ rewardedAd: GADRewardedAd, didFailToPresentWithError error: Error) {
-      print("Rewarded ad failed to present.")
+    
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print("Rewarded ad dismissed.")
+          
+          createAndLoadRewardedAd()
     }
 
     // MARK: -

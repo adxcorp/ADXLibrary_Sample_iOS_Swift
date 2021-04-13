@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MoPub
+import MoPubSDK
 
 class ADXFullScreenViewController: UIViewController, MPInterstitialAdControllerDelegate {
 
@@ -31,7 +31,7 @@ class ADXFullScreenViewController: UIViewController, MPInterstitialAdControllerD
         mopubInterstitial.show(from: self);
     }
     
-    func interstitialDidFail(toLoadAd interstitial: MPInterstitialAdController!) {
+    func interstitialDidFail(toLoadAd interstitial: MPInterstitialAdController!, withError error: Error!) {
         print("interstitialDidFail")
     }
     
