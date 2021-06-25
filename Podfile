@@ -10,13 +10,13 @@ target 'ADXLibrary_iOSSample_Swift' do
   # Pods for ADXLibrary_iOSSample
 
   # 배너, 네이티브, 전면
-  pod 'ADXLibrary', '1.9.0'
-  pod 'ADXLibrary-FBAudienceNetwork', '1.9.0'
-  pod 'ADXLibrary-Cauly', '1.9.0'
-  pod 'ADXLibrary-Pangle', '1.9.0'
-  pod 'ADXLibrary-Vungle', '1.9.0'
+  pod 'ADXLibrary', '1.9.1'
+  pod 'ADXLibrary-FBAudienceNetwork', '1.9.1'
+  pod 'ADXLibrary-Cauly', '1.9.1'
+  pod 'ADXLibrary-Pangle', '1.9.1'
+  pod 'ADXLibrary-Vungle', '1.9.1'
 
   # 리워드 비디오 사용 시 추가
-  pod 'ADXLibrary-UnityAds', '1.9.0'
+  pod 'ADXLibrary-UnityAds', '1.9.1'
  
 end
